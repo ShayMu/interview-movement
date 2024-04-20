@@ -1,0 +1,36 @@
+.UsersPage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+}
+
+.UsersTableContainer {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+    height: 100%;
+}
+
+.UsersPageActionRow {
+    display: flex;  
+    margin-bottom: 20px; 
+    align-items: center;
+}
+
+.UsersPagePagingAction {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.UserActionDeleteButton {
+
+}
+
+.UserActionDeleteButton:hover {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.6);
+}

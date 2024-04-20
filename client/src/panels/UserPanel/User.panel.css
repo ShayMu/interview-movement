@@ -1,0 +1,58 @@
+.userPanelContainer {
+    transition: all 0.2s;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.userPanelOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+}
+
+.userPanelBox {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: fit-content;
+    color: black;
+    padding: 30px;
+    margin: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userPanelHeadline {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.userPanelFooter {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}

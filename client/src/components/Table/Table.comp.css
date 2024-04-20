@@ -1,0 +1,28 @@
+.TableContainer {
+    display: grid;
+    gap: 5px;
+    border: 0px;
+}
+  
+.TableHeaderCell, .TableCell {
+    padding: 5px;
+    border: 0px;
+    padding-bottom: 10px;
+    font-size: large;
+}
+
+.TableHeaderRow {
+    display: grid;
+    font-weight: bold;
+}
+
+.TableRow {
+    display: grid;
+    align-items: center;
+}
+
+.TableRow:hover {
+    background-color: #9163e720;
+    cursor: pointer;
+}
+  

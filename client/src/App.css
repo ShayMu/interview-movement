@@ -1,0 +1,72 @@
+html, body, .App, #root {
+    height: 100%;
+    margin: 0px;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9163e750;
+}
+
+.primaryButton {
+    color: white;
+    background-color: #9163e7;
+}
+
+.speedButton {
+    background-color: transparent;
+    padding: 5px;
+
+}
+
+.speedButton:hover {
+    background-color: #cdcdcd;
+}
+
+.actionButton {
+    padding: 10px;
+    font-size: small;
+}
+
+button {
+    padding: 15px;
+    font-size: large;
+    border-radius: 5px;
+    border: 0px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+input[type="text"] {
+    transition: all 0.2s;
+    padding: 10px;
+    border-radius: 5px;
+    outline-color: #9163e7;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.formField {
+    margin-bottom: 20px;
+}
+
+.formFieldTitle {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.pageHeadline {
+    font-size: xx-large;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
