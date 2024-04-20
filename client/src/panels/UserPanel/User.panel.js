@@ -1,6 +1,6 @@
 import React from 'react';
 import helperUtils from '../../utils/helpers.util';
-import api from '../../services/api.service';
+import api from '../../controllers/api.controller';
 import _ from 'lodash';
 import './User.panel.css';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import api from '../../services/api.service';
+import api from '../../controllers/api.controller';
 import Table from '../../components/Table/Table.comp';
 import helperUtils from '../../utils/helpers.util';
 import UserPanel from '../../panels/UserPanel/User.panel';
