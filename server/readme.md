@@ -25,15 +25,15 @@ In addition we add the admin user "eve.holt@reqres.in" to support the login requ
 
 In order to minimize testing overhead and external tools the data is stored in the cache.
 
-In order to acheive that a simple base model was created to support the basic DB CRUD operations. On top of that a model for the users table was created to handle all the users specific operations.
+A simple base model was created to support the basic DB CRUD operations.
 
-The users model was built with mongodb in mind as the DB so the base model can be easily replaced if needed.
+The users model was built with mongodb in mind as the DB; the base model can be easily replaced if needed.
 
 ### API (port: 8081)
 
 The API is RESTful. Taking into consideration the method of the request when selecting the relevant endpoint.
 
-The response will always be JSON having "ok" field to state whether the request has been finished successfuly.
+The response is JSON with "ok" field to state whether the request has been finished successfuly.
 ```
 {
   ok: 1
@@ -43,19 +43,19 @@ The response will always be JSON having "ok" field to state whether the request 
 
 ### CORS
 
-The following origins will be allowed: localhost, facebook.com, google.com.
+The following origins are allowed: localhost, facebook.com, google.com.
 
 ### Authentication
 
-We will use the headers as the main authentication method checking a token or username and password.
+The headers are the main authentication method checking a token or username and password.
 
-For example If a token is sent using the header **X-Auth-Token** we will verify it both with jwt ecryption and user token.
+For example, If a token is sent using the header **X-Auth-Token** it is verified both with jwt ecryption and user token.
 
-When no token header is sent, the headers **X-Auth-Username** and **X-Auth-Password** will be verified and return the relevant token in the header **X-Auth-Token** for future requests.
+When no token header is sent, the headers **X-Auth-Username** and **X-Auth-Password** are verified and return the relevant token in the header **X-Auth-Token** for future requests.
 
 ## Files
 
-The server holds the Bussiness logic and the controllers to be aligned with MVC architecture.
+The server holds the Bussiness logic and the controllers to align with MVC architecture.
 
 **src/server.js** - Server init file.
 
