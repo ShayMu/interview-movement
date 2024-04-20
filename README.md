@@ -1,13 +1,3 @@
-Run the server using
+# Movement Interview Home Assignment
 
-npm install
-
-npm run start
-
-------
-
-run the client using
-
-npm install
-
-npm run start
+Please read the readme file on the client and server folders to better understand the project.
