@@ -18,8 +18,8 @@ class API {
         else {
             // for testing purposes
             // in production should have a login page to send those headers 
-            headers['authusername'] = 'eve.holt@reqres.in';
-            headers['authpassword'] = 'cityslicka';
+            headers['X-Auth-Username'] = 'eve.holt@reqres.in';
+            headers['X-Auth-Password'] = 'cityslicka';
         }
 
         return headers;

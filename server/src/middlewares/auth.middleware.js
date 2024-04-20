@@ -4,6 +4,8 @@ const app = require('../services/app.service');
 const usersModel = require('../models/users.model');
 
 const authTokenHeader = 'x-auth-token';
+const authUsernameHeader = 'x-auth-username';
+const authPasswordHeader = 'x-auth-password';
 
 function buildCorsAuth(req, res) {
     const cors = require('cors');
@@ -36,7 +38,7 @@ async function userAuth(req, res, next) {
         }
     }
     else {
-        let authBody = req.auth || {username: req.headers.authusername, password: req.headers.authpassword};
+        let authBody = req.auth || {username: req.headers[authUsernameHeader], password: req.headers[authPasswordHeader]};
         if (!authBody) return next(routeErrors.auth.INVALID_CRED);
         let userToken = await usersModel.verifyUserPassword(authBody.username, authBody.password);
         if (!userToken) return next(routeErrors.auth.INVALID_CRED);
