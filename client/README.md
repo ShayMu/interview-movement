@@ -23,7 +23,7 @@ On success login the user token is saved in the cache and the cookies for future
 
 When a token exists in the client cookies the requests are sent with **X-Auth-Token**.
 
-**Auto login will be done using the admin user *eve.holt@reqres.in* to simulate auth and user actions.**
+*Auto login will be done using the admin user eve.holt@reqres.in to simulate auth and user actions.*
 
 ## Files
 
