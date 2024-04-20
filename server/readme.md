@@ -17,7 +17,7 @@ npm run start
 
 Test data is located at "https://reqres.in/api/users".
 
-In addition we add the admin user "eve.holt@reqres.in" to support the login request to "https://reqres.in/api/login".
+In addition we add the admin user *eve.holt@reqres.in* to support the login request to "https://reqres.in/api/login".
 
 (this data is loaded in the app.service file on init)
 
