@@ -33,7 +33,7 @@ The client holds the view and controllers to align with MVC architecture.
 
 ### Controllers
 
-**/src/controllers/** - Holds the access to the business logic.
+**/src/controllers/** - Holds the access to the business logic and data.
 
 ### View
 
